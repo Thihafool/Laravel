@@ -1,0 +1,85 @@
+  // $posts = Post::all()->toArray(); //get
+        // $posts = Post::orderBy('created_at', 'desc')->paginate(3); //scan data
+        // $posts = Post::where('id', '<', '6')->where('address', '=', 'Yangon')->get();
+        // $posts = Post::get()->pluck('title');
+
+        // $posts = Post::where('id', '<', 11)->get()->random();
+        // $posts = Post::where('address', 'Yangon')->get()->random();
+        // $posts = Post::where('id', '<', '6')->pluck('title');
+
+        // $posts = Post::where('id', '<', 5)->orwhere('address', 'Yangon')->get();
+        // $posts = Post::orderBy('price', 'desc')->get();
+        // $posts = Post::select('id', 'address', 'price')->where('address', 'Yangon')->whereBetween('price', [2000, 9000])->orderBy('price', 'asc')->get();
+
+        // $posts = Post::where('address', 'Yangon')->orderBy('price', 'asc')->dd();
+
+        // $posts = DB::table('posts')->select('title', 'price')->where('address', 'Yangon')->get()->toArray();
+
+        //map each through
+
+
+        // map each =>paginate =>Data
+        // through =>paginage =>pagination + Data
+
+        // $posts = Post::get()->each(function ($post)
+        // $posts = Post::paginate(5)->through(function ($post) {
+        //     $post->title = strtoupper($post->title);
+        //     $post->description = strtoupper($post->description);
+        //     $post->price = $post->price * 2;
+        //     return $post;
+        // });
+
+
+
+        // $posts = Post::find(3);
+        // $posts = Post::where('id', 3)->first(); //same
+        // $posts = Post::avg('price');
+        // $posts = Post::select('id', 'title as post_title', 'title')->get()->toArray();
+
+        // $posts = Post::select('address', DB::raw('COUNT(address) as user_count', 'address_count'), DB::raw('AVG(price) as total_price'))
+        //     ->groupBy('address')->get()->toArray();
+
+
+        // $posts = Post::select('rating', DB::raw('COUNT(rating) as rating_count', 'rating_count'), DB::raw('AVG(price) as total_price'))
+        //     ->groupBy('rating')->get()->toArray();
+        // $posts = Post::count();
+        // $posts = Post::select('title')->get();
+        // dd($posts->toArray());
+        // dd($posts->toArray());
+
+        // $posts = Post::orderBy('created_at', 'desc')->get();
+        // dd($posts->toArray());
+        // // dd($posts);
+        // dd($posts[0]['title']);
+
+        // http://localhost/lara-test/public/customer/createPage?key =code lab
+
+        // $searchKey = ($_REQUEST['key']);
+        // $post = Post::where('title', 'like', '%' . $searchKey . '%')->get()->toArray();
+
+        // $post = Post::when(request('key'), function ($p) {
+        //     $searchKey = request('key');
+        //     $p->where('title', 'like', '%' . $searchKey . '%');
+        // })->paginate(4);
+
+        // dd($post->toArray());
+
+        // http://localhost/lara-test/public/customer/createPage?
+        // http://localhost/lara-test/public/customer/createPage?page=2
+        // http://localhost/lara-test/public/customer/createPage?searchKey=thi+ha
+
+
+                // $response = [
+        //     'title' => $request->postTitle,
+        //     'description' => $request->postDescription
+        // ];
+        This is testing
+        // return $response;
+
+           // private function getUpdateData(Request $request)
+    // {
+    //     return [
+    //         'title' => $request->updateName,
+    //         'description ' => $request->updateDescription
+    //     ];
+    // }
