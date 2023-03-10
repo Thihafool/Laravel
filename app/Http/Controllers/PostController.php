@@ -13,6 +13,8 @@ class PostController extends Controller
     //customer create page
     public function create()
     {
+        // $posts = Post::all()->toArray(); //get
+        // $posts = Post::orderBy('created_at', 'desc')->paginate(3); //scan data
         // $posts = Post::where('id', '<', '6')->where('address', '=', 'Yangon')->get();
         // $posts = Post::get()->pluck('title');
 
